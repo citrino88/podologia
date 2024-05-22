@@ -109,17 +109,15 @@ h2{
     header, footer, main{
         width: 100vw;
     }
-
-    figure img{
-        display: block;
-        width: 60%;        
-    }
+    
     .flex{
         display: flex;
+        flex-direction: column;
         justify-content: space-around;
         align-items: center;
         flex-wrap: wrap;        
     }
+   
 }
 
 /* ### CONTATO ### */
@@ -234,7 +232,6 @@ input:focus, select:focus, textarea:focus{
 
 /* SOBRE */
 #sobre{
-    margin: 5% 20%;
     text-align: justify;
     border-color: #102e03;
     border: 2px solid;
@@ -256,7 +253,6 @@ input:focus, select:focus, textarea:focus{
 }
 
 #inicial{
-    margin: 5% 10%;
     text-align: justify;
     border-color: #102e03;
     border: 2px solid;
