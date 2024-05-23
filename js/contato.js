@@ -121,3 +121,11 @@ botaoBuscar.addEventListener("click", async function(event){
       });
     }
     formulario.addEventListener("submit", handleSubmit) //trocamos para nosso const formulario
+
+    //hambuguer
+    const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".nav-menu");
+
+hamburger.addEventListener("click", () => {
+  navMenu.classList.toggle("active");
+});
