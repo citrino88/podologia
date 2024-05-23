@@ -54,15 +54,22 @@
       <a href="index.html"><img class="logo" src="img/logo.jpg" alt=""></a>
     </div>
     
-    <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">Toggle top offcanvas</button>
+    <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">Menu &equiv;</button>
 
 <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
   <div class="offcanvas-header">
-    <h5 class="offcanvas-title" id="offcanvasTopLabel">Offcanvas top</h5>
+    <h5 class="offcanvas-title" id="offcanvasTopLabel">Menu</h5>
     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
   </div>
   <div class="offcanvas-body">
-    ...
+    <nav>
+      <ul>
+      <li><a href="index.html"> Início </a></li>
+      <li><a href="sobre.html"> Sobre </a></li>
+      <li><a href="servicos.html"> Serviços </a></li>
+      <li><a href="contato.html"> Contato </a></li> 
+      </ul>                    
+  </nav>
   </div>
 </div>
     <button class="hamburger" type="button" aria-label="Menu">
@@ -130,15 +137,21 @@
 
     <!-- bibliotecas sempre vem primeiro, do que plugins -->
     <!-- Instalação/Importação da biblioteca jQuery -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
     <!-- Abaixo, Instalação/Importação do plugin jQuery Mask -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
 
-    <script src="js/menu.js"></script>
     <script src="js/contato.js"></script>
+    <script>
+      const hamburger = document.querySelector(".hamburger");
+      const navMenu = document.querySelector(".nav-menu");
+
+      hamburger.addEventListener("click", () => {
+      navMenu.classList.toggle("active");
+      });
+    </script>
 </main>
 
 </html>

@@ -102,7 +102,7 @@ botaoBuscar.addEventListener("click", async function(event){
         }
       }).then(response => {
         if (response.ok) {
-          status.innerHTML = "Obrigado por seu e-mail, em breve retornaremos! 😀";
+          status.innerHTML = "Obrigado por seu contato, em breve retornaremos! 😀";
           status.style.color = "blue";
           formulario.reset()//vamos resetar o nosso const formulario
         } else {
